@@ -25,6 +25,11 @@ body {
   font-family: 'Inter', sans-serif;
   transform-origin: center;
 }
+body {
+  zoom: 0.75;        /* adjust: 0.9 = zoom out 10%, 1.1 = zoom in 10% */
+  transform-origin: top center;
+}
+
 
 
 .glass {
