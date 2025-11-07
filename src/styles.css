@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-from: #06b6d4; /* cyan-500 */
+  --accent-to: #6366f1;   /* indigo-500 */
+}
+html {
+  font-size: 18px; /* globally scales rem units */
+}
+@media (min-width: 1280px) {
+  html { font-size: 20px; }
+}
+
+body {
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(99,102,241,.25), transparent),
+              radial-gradient(1000px 500px at 80% 10%, rgba(34,211,238,.25), transparent),
+              #0a0a0a;
+  color: white;
+}
+body {
+  @apply flex flex-col items-center justify-start min-h-screen;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+  transform-origin: center;
+}
+
+
+.glass {
+  @apply bg-white/10 backdrop-blur-xl border border-white/10;
+}
+@media (min-width: 1280px) {
+  body { zoom: 1.1; } /* or use transform: scale(1.1) if zoom feels off */
+}
+
+.window-title {
+  @apply bg-white/10 border-b border-white/10 px-3 py-2 text-sm flex items-center justify-between;
+}
+
+.neon-ring {
+  box-shadow: 0 0 30px rgba(99, 102, 241, 0.35);
+}
