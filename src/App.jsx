@@ -121,13 +121,13 @@ export default function App(){
         </p>
       </div>
 
-      {/* Windows */}
+            {/* Windows */}
       <div className="relative z-30">
         {wins.projects && (
           <Window
           title="Projects"
           icon={Layers}
-          initial={{ x: 500, y: 260, w: 900, h: 580 }}
+          initial={{ x: 400, y: 200, w: 700, h: 600 }}
           onClose={() => close('projects')}
         >
         
@@ -135,17 +135,17 @@ export default function App(){
           </Window>
         )}
         {wins.about && (
-          <Window title="About" icon={FileText} initial={{x:520,y:160,w:520,h:360}} onClose={()=>close('about')}>
+          <Window title="About" icon={FileText} initial={{x:520,y:250,w:520,h:360}} onClose={()=>close('about')}>
             <About/>
           </Window>
         )}
         {wins.resume && (
-          <Window title="Resume" icon={FileText} initial={{ x: -500, y: 260, w: 900, h: 580 }} onClose={()=>close('resume')}>
+          <Window title="Resume" icon={FileText} initial={{ x: -200, y: 200, w: 600, h: 580 }} onClose={()=>close('resume')}>
             <Resume/>
           </Window>
         )}
         {wins.playground && (
-          <Window title="Playground" icon={Layers} initial={{x:640,y:420,w:640,h:360}} onClose={()=>close('playground')}>
+          <Window title="Playground" icon={Layers} initial={{x:340,y:420,w:640,h:360}} onClose={()=>close('playground')}>
             <Playground/>
           </Window>
         )}
@@ -155,7 +155,7 @@ export default function App(){
           </Window>
         )}
         {wins.settings && (
-          <Window title="Settings" icon={SettingsIcon} initial={{x:760,y:220,w:520,h:360}} onClose={()=>close('settings')}>
+          <Window title="Settings" icon={SettingsIcon} initial={{x:260,y:220,w:520,h:360}} onClose={()=>close('settings')}>
             <Settings accentIdx={accentIdx} setAccentIdx={setAccentIdx}/>
           </Window>
         )}
