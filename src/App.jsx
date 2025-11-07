@@ -121,7 +121,7 @@ export default function App(){
         </p>
       </div>
 
-            {/* Windows */}
+      {/* Windows */}
       <div className="relative z-30">
         {wins.projects && (
           <Window
